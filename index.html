@@ -18,7 +18,22 @@
     <meta itemprop="image" content="https://www.viget.com/images/viget-social-share-1200.png">
 
     <link rel="icon" href="sun-land-favicon.png" type="image/png">
-    <link rel="dns-prefetch" href="https://static.viget.com/"><link href="https://www.viget.com/stylesheets/application.min.css?1539719480" rel="stylesheet"> <script>var d=document,e=d.documentElement;e.className=e.className.replace(/\bno-js\b/i,'');</script>
+
+
+    <link rel="dns-prefetch" href="https://static.viget.com/">
+    <link href="https://www.viget.com/stylesheets/application.min.css?1539719480" rel="stylesheet">
+    <script>
+        var d=document,e=d.documentElement;e.className=e.className.replace(/\bno-js\b/i,'');
+    </script>
+
+    <!-- font added in attempt to replicate Viget font (direct use of font prohibited due to CORS) -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -299,55 +314,89 @@
     </header>
     <main id="content" role="main" tabindex="-1">
         <div class="user">
-        <div class="user__profile">
-        <div class="user__profile-image">
-        <img src="sundland-profile-pic.jpg">
-    <!--
-            <img src="https://static.viget.com/_400xAUTO_crop_center-center/3E8A6144.JPG?mtime=20171211142545" alt="" srcset="https://static.viget.com/_400xAUTO_crop_center-center/3E8A6144.JPG?mtime=20171211142545 400w,
-                                                                                                                              https://static.viget.com/_720xAUTO_crop_center-center/3E8A6144.JPG?mtime=20171211142545 720w,
-                                                                                                                              https://static.viget.com/3E8A6144.JPG?mtime=20171211142545 900w" sizes="(min-width: 1310px) 900px,
-        (min-width: 401px) 720px,
-        100vw">
-    -->
+            <div class="user__profile">
+                <div class="user__profile-image">
+                    <img src="sundland-profile-pic.jpg">
+                </div>
+                <div class="user__profile-content">
+                    <h1 class="user__profile-name">David Sundland</h1>
+                    <p class="user__profile-role">Recruitee</p>
+                    <div class="text">
+                        <p><strong>A fixer with a creative bent.</strong> David has returned to his engineering roots, after his passion for urban design took him from Flagstaff, Arizona, to Illinois and then to Alexandria, Virginia, as a city planner.  His love of live music and frustration with the lack of good online resources for finding concerts in Washington, DC, got him started creating websites. Now he’s combining his engineering brain and newfound passion for coding coding chops to xxx…. ...simple progam to have his computer help him with his trombone etudes, WP macros to encrypt text documents</p>
+                    </div>
+
+
+<!--                    Yin and Yang. Erica's interests know no bounds or subject-matter limits. At UVA, she studied the unlikely combo of bioethics and interdisciplinary global studies. Now — whether talking shop about creative copywriting or Rails dev — Erica loves hearing people's stories and discussing tech. She helps Viget find great people, and great people find Viget.
+
+
+Now, he builds apps with rich animations and thoughtful interactions. He's happy to be doing browser testing instead of standardized testing.
+Chloe fell in love with the art of code in middle school when she dabbled in HTML and CSS to spruce up her Myspace page. Now, she constructs clean and responsive interfaces that fulfill her passion for well-built design.
+
+                    I just have a lot of feelings. Blair's undergraduate degrees in both English and Communication Design help her concoct ideas, designs, and content with style AND substance.
+
+                    She's been making websites since Geocities was cool. Now she focuses less on scrolling sparkle text and more on intuitive, emotionally driven design. With a penchant for illustration, she breathes life and personality into brands.
+
+
+
+                    Our original engineering + design combo. An engineering major and studio art minor was rare at UVA in the mid-90s. This mix became Brian’s career focus when he co-founded Viget to bring together the technical and design talent that clients needed.
+
+                    Brian does everything from leading company direction to advising key clients to meeting every potential hire to making our conference tables with his bare hands. A focused man of many talents or a distracted man of many interests? We may never know.
+
+
+
+                    "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails." A Princeton graduate, Andy co-founded Viget and has served as President ever since. He makes sure clients and staff stay happy and that we can always pay our bills. Sometimes, you'll find him deadpanning our Free Lunch Friday company updates to everyone's delight.
+
+                    Andy actively participates in the Falls Church community. He loves sailing when he's not faithfully steering the Viget ship.
+
+
+
+
+                    Born to PM. On her first trip to Disney World, Claire commandeered the park map, asked each family member to rank attraction priorities, planned the route, then ran ahead to the first ride. She was 5.
+
+                    With a BA in journalism from UNC, Claire now combines her natural people and planning proclivities with her passion for all things digital to manage web and application development projects. Claire still loves trip planning, and running. She's visited 20 countries and run four marathons (so far).
+
+
+-->
+
+                    <ul class="user__profile-social">
+                        <li>
+                            <a href="https://github.com/DavidSundland">
+                                <span class="screen-reader">Github</span>
+                                <svg id="github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 20" enable-background="new 0 0 22 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M11 .205c-5.617 0-10.172 4.496-10.172 10.043 0 4.438 2.914 8.201 6.957 9.529.509.092.694-.219.694-.484l-.014-1.709c-2.83.607-3.427-1.346-3.427-1.346-.462-1.16-1.128-1.468-1.128-1.468-.924-.623.069-.609.069-.609 1.021.069 1.558 1.032 1.558 1.032.908 1.535 2.381 1.092 2.961.836.092-.65.355-1.092.646-1.344-2.259-.253-4.634-1.115-4.634-4.962 0-1.097.396-1.993 1.048-2.695-.104-.254-.454-1.274.1-2.658 0 0 .854-.27 2.797 1.03.812-.223 1.682-.335 2.547-.339.863.004 1.733.116 2.546.339 1.942-1.3 2.795-1.03 2.795-1.03.555 1.384.206 2.404.102 2.658.651.702 1.045 1.599 1.045 2.695 0 3.857-2.378 4.707-4.645 4.955.365.311.691.924.691 1.859 0 1.344-.013 2.426-.013 2.756 0 .268.184.58.699.482 4.038-1.33 6.95-5.092 6.95-9.527 0-5.547-4.555-10.043-10.172-10.043z" /></svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/david-sundland">
+                                <span class="screen-reader">LinkedIn</span>
+                                <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M.818 5.542h3.08v9.778h-3.08v-9.778zm1.54-4.861c.984 0 1.784.79 1.784 1.763s-.8 1.762-1.784 1.762c-.987 0-1.786-.79-1.786-1.763s.798-1.762 1.786-1.762" /><path d="M5.829 5.542h2.952v1.336h.041c.41-.768 1.416-1.579 2.914-1.579 3.115 0 3.691 2.024 3.691 4.658v5.362h-3.077v-4.755c0-1.135-.02-2.593-1.6-2.593-1.602 0-1.846 1.235-1.846 2.512v4.836h-3.075v-9.777z" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="user__profile-waves">
+                    <svg><use xlink:href="#dark-waves" /></svg>
+                    </div>
+                </div>
             </div>
-        <div class="user__profile-content">
-        <h1 class="user__profile-name">Erica Jensen</h1>
-        <p class="user__profile-role">Recruiter</p>
-        <div class="text">
-        <p><strong>Yin and Yang.</strong> Erica's interests know no bounds or subject-matter limits. At UVA, she studied the unlikely combo of bioethics and interdisciplinary global studies. Now &mdash; whether talking shop about creative copywriting or Rails dev &mdash; Erica loves hearing people's stories and discussing tech. She helps Viget find great people, and great people find Viget.</p>
-        </div>
-        <ul class="user__profile-social">
-        <li>
-        <a href="https://www.linkedin.com/in/erica-jensen-034108a6/">
-        <span class="screen-reader">LinkedIn</span>
-        <svg id="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M.818 5.542h3.08v9.778h-3.08v-9.778zm1.54-4.861c.984 0 1.784.79 1.784 1.763s-.8 1.762-1.784 1.762c-.987 0-1.786-.79-1.786-1.763s.798-1.762 1.786-1.762" /><path d="M5.829 5.542h2.952v1.336h.041c.41-.768 1.416-1.579 2.914-1.579 3.115 0 3.691 2.024 3.691 4.658v5.362h-3.077v-4.755c0-1.135-.02-2.593-1.6-2.593-1.602 0-1.846 1.235-1.846 2.512v4.836h-3.075v-9.777z" /></svg>
-        </a>
-        </li>
-        </ul>
-        <div class="user__profile-waves">
-        <svg><use xlink:href="#dark-waves" /></svg>
-        </div>
-        </div>
-        </div>
-        <div class="wrapper">
-        <div class="user__articles">
-        <h2 class="user__articles-hdr">Erica&rsquo;s Articles</h2>
-        <ul class="author-articles">
-        <li>
-        <a href="https://www.viget.com/articles/what-matters-most-when-you-apply-six-myths-debunked/" class="author-articles__title text-hover--camelotIsASillyPlacePurple generated-content-hover--camelotIsASillyPlacePurple">What Matters Most When You Apply: Six Myths Debunked</a>
-        <p class="author-articles__meta">
-        <span class="screen-reader">
-        Article Categories:
-        </span>
-        <a class="category-tag " href="https://www.viget.com/articles/category/news-culture/" aria-label="News and Culture">
-        #News &amp; Culture</a>,
-        <a class="category-tag " href="https://www.viget.com/articles/category/recruiting/" aria-label="Recruiting">
-        #Recruiting</a> </p>
-        <span class="screen-reader">.</span>
-        </li>
-        </ul>
-        </div>
-        </div>
+            <div class="wrapper">
+            <div class="user__articles">
+            <h2 class="user__articles-hdr">Erica&rsquo;s Articles</h2>
+            <ul class="author-articles">
+            <li>
+            <a href="https://www.viget.com/articles/what-matters-most-when-you-apply-six-myths-debunked/" class="author-articles__title text-hover--camelotIsASillyPlacePurple generated-content-hover--camelotIsASillyPlacePurple">What Matters Most When You Apply: Six Myths Debunked</a>
+            <p class="author-articles__meta">
+            <span class="screen-reader">
+            Article Categories:
+            </span>
+            <a class="category-tag " href="https://www.viget.com/articles/category/news-culture/" aria-label="News and Culture">
+            #News &amp; Culture</a>,
+            <a class="category-tag " href="https://www.viget.com/articles/category/recruiting/" aria-label="Recruiting">
+            #Recruiting</a> </p>
+            <span class="screen-reader">.</span>
+            </li>
+            </ul>
+            </div>
+            </div>
         </div>
     </main>
     <footer id="footer">
